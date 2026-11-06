@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive navbar and card grid</title>
+    <style>
+        h1 {
+            color: red;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        nav{
+            background-color: blue;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card{
+            width: 200px;
+            padding: 20px;
+            background-color: aqua;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        @media(max-width: 600px){
+           nav {
+            flex-direction: column;
+            gap: 10px;
+           }
+
+           .card{
+            width: 100%;
+           }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Responsive navbar and card grid</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <h2>My Cards</h2>
+
+    <div id="container">
+
+        <div class="card">
+            <p>Card 1</p>
+        </div>
+
+        <div class="card">
+            <p>Card 2</p>
+        </div>
+
+        <div class="card">
+            <p>Card 3</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
