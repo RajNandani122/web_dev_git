@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky navbar and card overlay</title>
+    <style>
+        nav{
+            background-color:red;
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            position: sticky; /* using this property the nav bar get stick at the top */
+            top: 0;
+            gap: 15px;
+        }
+        #container{
+            display: flex;
+            gap: 20px;
+            padding: 30px;
+        }
+        .card{
+            border: 2px solid black;
+            background-color: aqua;
+            text-align: center;
+            position: relative;
+            width: 200px;
+            height: 150px;
+            padding: 20px;
+        }
+        .overlay{
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <h1>My Projects</h1>
+
+    <div id="container">
+
+        <div class="card">
+            <h2>Card 1</h2>
+            <div class="overlay">
+                <p> Card 1 contains HTML Project</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Card 2</h2>
+            <div class="overlay">
+                <p>Card 2 contains CSS Project</p>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
